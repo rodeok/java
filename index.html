@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript</title>
+    </head>
+    <body>
+        <label></label>
+        <input type="text" id="n1" placeholder="number">
+        <br>
+        <br>
+        <label></label>
+        <input type="text" id="n2" placeholder="secondnumber">
+        <br>
+        <br>
+        <input type="button" value="addition" onclick="add()">
+        <script>
+            function add(){
+                var n1=document.getElementById("n1").nodeValue;
+                var n2=document.getElementById("n2").nodeValue;
+                alert(n1+n2);
+            }
+        </script>
+    </body>
+</html>

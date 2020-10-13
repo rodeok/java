@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>my assignment</title>
+</head>
+<body>
+Enter the First number : <input id="first">
+Enter the Second number: <input id="second">
+<button onclick="add()">Add</button>
+<input id="answer">
+
+<br>
+<br>
+Enter Temprature in C : <input id="cel">
+<button onclick="temp()">Temp</button>
+<input id="equal">
+
+<br>
+<br>
+<br>
+enter number in x:<input id="num">
+enter number in y: <input id="ds">
+<button onclick="div()">div</button>
+<input id="equ">
+
+
+<script>
+    function add(){
+    var a,b,c;
+    a=Number(document.getElementById("first").value);
+    b=Number(document.getElementById("second").value);
+    c= a + b;
+    document.getElementById("answer").value= c;
+    }
+    function temp(){
+        var Tempa,Tempb,Tempc,Tempd,Tempe;
+        Tempa=Number(document.getElementById("cel").value);
+        Tempb=1.8;
+        Tempc=32;
+        Tempd=Tempa*Tempb;
+        Tempe=Tempd+Tempc;
+        document.getElementById("equal").value=Tempe;
+        
+        
+    }
+    </script>
+</body>
+</html>
